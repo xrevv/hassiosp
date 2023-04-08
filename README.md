@@ -1,17 +1,15 @@
-## Things to do after cloninig
+## Run this script after cloning to set correct permissions
 ```
 cd hassio/
 ./configure 
-./set_ip
-docker compose up -d 
 ```
-## Running the project
+## Running the containers
 ```
 cd hassio/
 ./set_ip
 docker compose up -d 
 ```
-## Stopping the project
+## Stopping the containers
 ```
 cd hassio/
 docker compose down 
