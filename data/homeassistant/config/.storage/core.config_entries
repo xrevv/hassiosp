@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {
+        "entry_id": "4dbb5509098ecded114dad76cd6ae743",
+        "version": 1,
+        "domain": "sun",
+        "title": "Sun",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "9b82de92c20d7acabffb26a405ee69a5",
+        "version": 1,
+        "domain": "radio_browser",
+        "title": "Radio Browser",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "aaf9c115a7afe3311ced68c57ff4a10b",
+        "version": 1,
+        "domain": "esphome",
+        "title": "room-sensors",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "unique_id": "84:f3:eb:16:6f:6c",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "0d7a1ca649faaeb6685e46ff0304a3c3",
+        "version": 1,
+        "domain": "esphome",
+        "title": "ir-remote-desk",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "unique_id": "a0:20:a6:21:9a:9e",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "0ac6e4a31eb92483169748559aa81fd1",
+        "version": 1,
+        "domain": "brother",
+        "title": "DCP-395CN L9F334561",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "unique_id": "l9f334561",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "767bbc25ee534ef5ccd1cfb0fdeb0cdb",
+        "version": 1,
+        "domain": "esphome",
+        "title": "ir-remote-bed",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "unique_id": "cc:50:e3:c0:f5:ea",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "4b0b16c956bd972ad258a54d328bd3b5",
+        "version": 1,
+        "domain": "esphome",
+        "title": "radar",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "unique_id": "84:cc:a8:a0:b0:33",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "97d995c70698ec7969a2e05ee2a46ba9",
+        "version": 1,
+        "domain": "hyperion",
+        "title": "Hyperion",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "unique_id": "02a8a492-a794-520e-b4dd-5f86abb51b5f",
+        "disabled_by": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.hassiosp",
+        "state": "unknown",
+        "attributes": {
+          "editable": true,
+          "id": "hassiosp",
+          "user_id": "1dc4aa321bcf43ae976ad0727a8fb4ba",
+          "friendly_name": "hassiosp"
+        },
+        "last_changed": "2023-04-08T20:43:20.642126+00:00",
+        "last_updated": "2023-04-08T20:43:22.226069+00:00",
+        "context": {
+          "id": "01GXH9QYQJACH6Q03KPH7XDP68",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-08T20:46:05.970133+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.bed_restart",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "restart",
+          "friendly_name": "Bed Restart"
+        },
+        "last_changed": "2023-04-08T20:43:22.216313+00:00",
+        "last_updated": "2023-04-08T20:43:22.216313+00:00",
+        "context": {
+          "id": "01GXH9QYQ8XWJBZSXQWYX0TED2",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-08T20:45:37.143217+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.monitor_restart",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "restart",
+          "friendly_name": "Monitor Restart"
+        },
+        "last_changed": "2023-04-08T20:43:22.215910+00:00",
+        "last_updated": "2023-04-08T20:43:22.215910+00:00",
+        "context": {
+          "id": "01GXH9QYQ7C5NZQ0109CDRPSYD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-08T20:45:39.799744+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.bed_firmware",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "0.13.3",
+          "in_progress": false,
+          "latest_version": "0.13.3",
+          "release_summary": null,
+          "release_url": "https://github.com/Aircoookie/WLED/releases/tag/v0.13.3",
+          "skipped_version": null,
+          "title": "WLED",
+          "device_class": "firmware",
+          "entity_picture": "https://brands.home-assistant.io/_/wled/icon.png",
+          "friendly_name": "Bed Firmware",
+          "supported_features": 3
+        },
+        "last_changed": "2023-04-08T20:43:32.356759+00:00",
+        "last_updated": "2023-04-08T20:43:32.356759+00:00",
+        "context": {
+          "id": "01GXH9R8M4MFCV619NT5B66ZT4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-08T20:45:37.143427+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.monitor_firmware",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "0.13.3",
+          "in_progress": false,
+          "latest_version": "0.13.3",
+          "release_summary": null,
+          "release_url": "https://github.com/Aircoookie/WLED/releases/tag/v0.13.3",
+          "skipped_version": null,
+          "title": "WLED",
+          "device_class": "firmware",
+          "entity_picture": "https://brands.home-assistant.io/_/wled/icon.png",
+          "friendly_name": "Monitor Firmware",
+          "supported_features": 3
+        },
+        "last_changed": "2023-04-08T20:43:32.485840+00:00",
+        "last_updated": "2023-04-08T20:43:32.485840+00:00",
+        "context": {
+          "id": "01GXH9R8R5MPFCV28ACMK0KQNF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-04-08T20:45:39.799929+00:00"
+    }
+  ]
+}

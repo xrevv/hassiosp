@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {
+        "area_id": null,
+        "config_entries": [
+          "4dbb5509098ecded114dad76cd6ae743"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "3c8b8573450052e432889497acd042cc",
+        "identifiers": [
+          [
+            "sun",
+            "4dbb5509098ecded114dad76cd6ae743"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "Sun",
+        "sw_version": null,
+        "via_device_id": null
+      }
+    ],
+    "deleted_devices": [
+      {
+        "config_entries": [],
+        "connections": [
+          [
+            "mac",
+            "68:c6:3a:ea:23:24"
+          ]
+        ],
+        "identifiers": [
+          [
+            "wled",
+            "68c63aea2324"
+          ]
+        ],
+        "id": "a65d05da999cdb23a60d70bdc7f28059",
+        "orphaned_timestamp": 1680986737.1482732
+      },
+      {
+        "config_entries": [],
+        "connections": [
+          [
+            "mac",
+            "e8:68:e7:81:0d:48"
+          ]
+        ],
+        "identifiers": [
+          [
+            "wled",
+            "e868e7810d48"
+          ]
+        ],
+        "id": "72e1381498c016ba68bed64f04d5056d",
+        "orphaned_timestamp": 1680986739.8040273
+      }
+    ]
+  }
+}

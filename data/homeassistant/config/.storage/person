@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "name": "hassiosp",
+        "user_id": "1dc4aa321bcf43ae976ad0727a8fb4ba",
+        "device_trackers": [],
+        "id": "hassiosp"
+      }
+    ]
+  }
+}
