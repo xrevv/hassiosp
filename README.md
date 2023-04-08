@@ -54,12 +54,12 @@ cd hassio/
 ```
 cd hassio/
 ./set_ip
-docker compose up -d 
+docker-compose up -d 
 ```
 ### Stopping the containers
 ```
 cd hassio/
-docker compose down 
+docker-compose down 
 ./rev_ip
 ```
 ## Warning
