@@ -1,3 +1,5 @@
+# Warning
+Running this project "as is" in a production environment is highly discouraged, because of leaked private keys and passwords visible in config files! This is just for demonstration purposes.
 ## Run this script after cloning to set correct permissions
 ```
 cd hassio/
@@ -17,5 +19,3 @@ docker compose down
 ```
 ## Warning
 set_ip and rev_ip requires ifconfig
-# Warning
-Running this project "as is" in a production environment is highly discouraged, because of leaked private keys and passwords visible in config files! This is just for demonstration purposes.
