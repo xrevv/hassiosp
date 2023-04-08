@@ -15,3 +15,5 @@ cd hassio/
 docker compose down 
 ./rev_ip
 ```
+## Warning
+set_ip and rev_ip requires ifconfig
