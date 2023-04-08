@@ -63,7 +63,7 @@ docker compose down
 ./rev_ip
 ```
 ## Warning
-set_ip and rev_ip requires ifconfig
+set_ip and rev_ip require ifconfig
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [docker]: https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=FFFFFF
