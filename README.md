@@ -17,3 +17,5 @@ docker compose down
 ```
 ## Warning
 set_ip and rev_ip requires ifconfig
+# Warning
+Running this project "as is" in a production environment is highly discouraged, because of leaked private keys and passwords visible in config files! This is just for demonstration purposes.
