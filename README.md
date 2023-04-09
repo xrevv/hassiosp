@@ -21,7 +21,6 @@ Running this project "as is" in a production environment is highly discouraged, 
 [![portainer][portainer]][portainer-url]
 [![influxdb][influxdb]][influxdb-url]
 [![grafana][grafana]][grafana-url] 
-
 [![labview][labview]][labview-url] 
 
 <!-- ABOUT THE PROJECT -->
@@ -48,22 +47,20 @@ hassiosphassiosp
 ### Run this script after cloning to set correct permissions
 ```
 cd hassio/
-./configure 
+make permissions
 ```
 ### Running the containers
 ```
 cd hassio/
-./set_ip
-docker-compose up -d 
+make run
 ```
 ### Stopping the containers
 ```
 cd hassio/
-docker-compose down 
-./rev_ip
+make stop
 ```
 ## Warning
-set_ip and rev_ip require ifconfig
+`ifconfig` needs to to be installed on the host machine.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [docker]: https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=FFFFFF
