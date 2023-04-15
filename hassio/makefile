@@ -48,6 +48,7 @@ backup-restore:
 	@echo Restoring a backup
 	$(MAKE) clean
 	sudo cp -r data.bak data
+	$(MAKE) permissions
 	@echo Done
 
 #------------------------------------------------------------------------------
