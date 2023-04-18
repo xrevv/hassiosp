@@ -24,14 +24,14 @@ permissions:
 
 ip_set:
 	@echo Setting IP from localhost to ${IP}
-	sed -i "s/localhost/${IP}/g" data/homeassistant/config/configuration.yaml 
+	sed -i "s/localhost/${IP}/g" data/homeassistant/config/configuration.yaml
 	@echo Done
 
 #------------------------------------------------------------------------------
 
 ip_rev:
 	@echo Setting IP from ${IP} to localhost
-	sed -i "s/${IP}/localhost/g" data/homeassistant/config/configuration.yaml 
+	sed -i "s/${IP}/localhost/g" data/homeassistant/config/configuration.yaml
 	@echo Done
 
 #------------------------------------------------------------------------------
