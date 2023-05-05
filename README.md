@@ -7,6 +7,7 @@
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#logins-and-passwords">Logins and passwords</a></li>
     <li><a href="#setup">Setup</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -44,7 +45,9 @@ hassiosphassiosp
 
 <!-- SETUP -->
 # Setup
-### Run this script after cloning to set correct permissions
+### Warning
+`ifconfig` needs to be installed on the host machine.
+### Run this after cloning to set correct permissions
 ```
 cd hassio/
 make permissions
@@ -59,8 +62,10 @@ make run
 cd hassio/
 make stop
 ```
-## Warning
-`ifconfig` needs to to be installed on the host machine.
+
+<!-- ACKNOWLEDGMENTS -->
+# Acknowledgments
+* [johanvandenbroek](https://github.com/johanvandenbroek/InfluxDB-Client-LabVIEW)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [docker]: https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=FFFFFF
