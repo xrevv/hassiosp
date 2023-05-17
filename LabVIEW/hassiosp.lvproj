@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="22308000">
+<Project Type="Project" LVVersion="23008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -21,7 +21,7 @@
 			<Item Name="Timestamp to Unix epoch time.vi" Type="VI" URL="../Timestamp to Unix epoch time.vi"/>
 			<Item Name="Variant To String.vi" Type="VI" URL="../Variant To String.vi"/>
 		</Item>
-		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
+		<Item Name="demo.vi" Type="VI" URL="../demo.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
