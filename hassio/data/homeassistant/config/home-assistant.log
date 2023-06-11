@@ -1,0 +1,62 @@
+2023-06-11 22:10:28.701 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2023-06-11 22:10:32.679 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from ip6-localhost (::1). Requested URL: '/api/websocket'. (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36)
+2023-06-11 22:10:34.431 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from ip6-localhost (::1). Requested URL: '/api/websocket'. (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36)
+2023-06-11 22:11:28.080 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: radio_browser
+2023-06-11 22:12:28.151 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: radio_browser
+2023-06-11 22:12:41.602 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Radio Browser' for radio_browser integration not ready yet: Could not connect to Radio Browser API; Retrying in background
+2023-06-11 22:12:46.623 ERROR (MainThread) [homeassistant.components.homeassistant_alerts] Error requesting homeassistant_alerts data: Cannot connect to host alerts.home-assistant.io:443 ssl:default [Try again]
+2023-06-11 22:13:25.523 WARNING (MainThread) [homeassistant.core] Task <Task pending name='Task-773' coro=<ConfigEntry.async_setup.<locals>.setup_again() running at /usr/src/homeassistant/homeassistant/config_entries.py:453> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[set.remove()]> was still running after stage 2 shutdown; Integrations should cancel non-critical tasks when receiving the stop event to prevent delaying shutdown
+2023-06-11 22:13:25.526 ERROR (MainThread) [homeassistant.config_entries] Error setting up entry Radio Browser for radio_browser
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Try again
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/radios/radio_browser.py", line 89, in _request
+    response = await self.session.request(
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host de1.api.radio-browser.info:443 ssl:default [Try again]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/backoff/_async.py", line 151, in retry
+    ret = await target(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/radios/radio_browser.py", line 114, in _request
+    raise RadioBrowserConnectionError(
+radios.exceptions.RadioBrowserConnectionError: Error occurred while communicating with the Radio Browser API
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/config_entries.py", line 383, in async_setup
+    result = await component.async_setup_entry(hass, self)
+  File "/usr/src/homeassistant/homeassistant/components/radio_browser/__init__.py", line 25, in async_setup_entry
+    await radios.stats()
+  File "/usr/local/lib/python3.10/site-packages/radios/radio_browser.py", line 124, in stats
+    response = await self._request("stats")
+  File "/usr/local/lib/python3.10/site-packages/backoff/_async.py", line 183, in retry
+    await asyncio.sleep(seconds)
+  File "/usr/local/lib/python3.10/asyncio/tasks.py", line 605, in sleep
+    return await future
+asyncio.exceptions.CancelledError
