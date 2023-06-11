@@ -1,0 +1,74 @@
+== Logging.lvlib
+
+*Responsibility:*
+No description found (add content in lvlib description)
+
+*Version:* 1.0.0.0
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Escape
+|image:Logging.lvlib_Escape.vi.png[Logging.lvlib:Escape.vi]
+|+++Escape the string.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Formatter
+|image:Logging.lvlib_Formatter.vi.png[Logging.lvlib:Formatter.vi]
+|+++Format the data.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Timestamp to Unix epoch time
+|image:Logging.lvlib_Timestamp_to_Unix_epoch_time.vi.png[Logging.lvlib:Timestamp to Unix epoch time.vi]
+|+++Generate the timestamp.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Variant To String
+|image:Logging.lvlib_Variant_To_String.vi.png[Logging.lvlib:Variant To String.vi]
+|+++Stringify the data.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|HTTP_Post
+|image:Logging.lvlib_HTTP_Post.vi.png[Logging.lvlib:HTTP_Post.vi]
+|+++Post data to the server.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Logging Message Loop
+|image:Logging.lvlib_Logging_Message_Loop.vi.png[Logging.lvlib:Logging Message Loop.vi]
+|+++The message loop subVI to handle messages pertaining to logging data.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Error Handler - Logging Message Loop
+|image:Logging.lvlib_Error_Handler___Logging_Message_Loop.vi.png[Logging.lvlib:Error Handler - Logging Message Loop.vi]
+|+++Process an error that occurred in the Logging Message Loop, either by ignoring it, or generating an "Error" message.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined

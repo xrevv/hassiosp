@@ -1,0 +1,50 @@
+== Acquisition.lvlib
+
+*Responsibility:*
+No description found (add content in lvlib description)
+
+*Version:* 1.0.0.0
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|Acquisition Message Loop
+|image:Acquisition.lvlib_Acquisition_Message_Loop.vi.png[Acquisition.lvlib:Acquisition Message Loop.vi]
+|+++Message loop for handling messages pertaining to the acquisition of data.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Acquire
+|image:Acquisition.lvlib_Acquire.vi.png[Acquisition.lvlib:Acquire.vi]
+|+++Perform the acquisition.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Acquire CPU load
+|image:Acquisition.lvlib_Acquire_CPU_load.vi.png[Acquisition.lvlib:Acquire CPU load.vi]
+|+++Acquire CPU load.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Error Handler - Acquisition Message Loop
+|image:Acquisition.lvlib_Error_Handler___Acquisition_Message_Loop.vi.png[Acquisition.lvlib:Error Handler - Acquisition Message Loop.vi]
+|+++Process an error that occurred in the Acquisition Message Loop, either by ignoring it, or generating an "Error" message.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
