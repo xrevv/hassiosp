@@ -13,6 +13,6 @@
 	</Item>
 	<Item Name="Acquisition Message Loop.vi" Type="VI" URL="../Acquisition Message Loop.vi"/>
 	<Item Name="Acquire.vi" Type="VI" URL="../Acquire.vi"/>
-	<Item Name="Generate Simulated Data.vi" Type="VI" URL="../Generate Simulated Data.vi"/>
+	<Item Name="Acquire CPU load.vi" Type="VI" URL="../Acquire CPU load.vi"/>
 	<Item Name="Error Handler - Acquisition Message Loop.vi" Type="VI" URL="../Error Handler - Acquisition Message Loop.vi"/>
 </Library>
