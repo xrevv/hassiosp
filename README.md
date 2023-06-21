@@ -7,6 +7,9 @@
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#logins-and-passwords">Logins and passwords</a></li>
     <li><a href="#setup">Setup</a></li>
+    <li><a href="#automatic-run">Automatic run</a></li>
+    <li><a href="#manual-run">Manual run</a></li>
+    <li><a href="#help">Help</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -45,27 +48,90 @@ hassiosphassiosp
 
 <!-- SETUP -->
 # Setup
-### Warning
-`ifconfig` needs to be installed on the host machine.
-### Run this after cloning to set correct permissions
+#### Confirmed working environments
+- Ubuntu 20.04.6 LTS in WSL
+- Fedora 37 and 38
+
+#### Needed packages
+- `make`
+- `net-tools`
+- `docker`
+- `docker-compose`
+
+#### Installation
+Ubuntu
 ```
-cd hassio/
-make permissions
+sudo apt-get update && sudo apt-get update -y
 ```
-### Running the containers
 ```
-cd hassio/
+sudo apt-get install make net-tools docker docker-compose -y
+```
+
+Fedora
+```
+sudo dnf up
+```
+```
+sudo dnf install make net-tools docker docker-compose
+```
+
+<!-- AUTOMATIC RUN -->
+# Automatic run
+```
+git clone https://github.com/xrevv/hassiosp &&
+cd hassiosp/hassio &&
+make permissions &&
 make run
 ```
-### Stopping the containers
+
+<!-- MANUAL RUN -->
+# Manual run
+Get into the directory
 ```
 cd hassio/
+```
+
+Run this after cloning to set correct permissions
+```
+make permissions
+```
+
+Running the containers
+```
+make run
+```
+
+Stopping the containers
+```
 make stop
+```
+
+<!-- TROUBLESHOOTING -->
+# Troubleshooting
+In case of:
+```
+Setting IP from localhost to localhost
+sed -i "s/localhost/"localhost"/g" data/homeassistant/config/configuration.yaml
+Done
+make[1]: Leaving directory '/root/hassiosp/hassio'
+docker-compose up -d
+ERROR: Couldn't connect to Docker daemon at http+docker://localhost - is it running?
+
+If it's at a non-standard location, specify the URL with the DOCKER_HOST environment variable.
+make: *** [makefile:10: run] Error 1
+```
+Run `sudo dockerd` in a separate terminal session.
+
+<!-- HELP -->
+# Help
+There's a built-in help. Just run:
+```
+make help
 ```
 
 <!-- ACKNOWLEDGMENTS -->
 # Acknowledgments
-* [johanvandenbroek](https://github.com/johanvandenbroek/InfluxDB-Client-LabVIEW)
+- [johanvandenbroek](https://github.com/johanvandenbroek/InfluxDB-Client-LabVIEW)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [docker]: https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=FFFFFF
